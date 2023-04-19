@@ -1,12 +1,16 @@
 import sqlite3
 
+# เชื่อม DB
 conn = sqlite3.connect('hw13_1650704388.db')
 cursor = conn.cursor()
 
 #ดูข้อมูล
 def listenDB():
+    # คำสั่ง sql หาข้อจาก table students
     sql = 'select * from students'
+    # รัน sql
     cursor.execute(sql)
+    # โชว์ข้อมูล
     showDb = cursor.fetchall()
     print(showDb,'\n')
 

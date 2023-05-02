@@ -1,0 +1,12 @@
+select * from student where username=? and password=?;
+
+update student set password=? where username=?;
+
+delete from student where std_id=?;
+
+INSERT INTO table_name (username, password, level)
+VALUES ('akexorcist', '123456789', 50);
+
+sql = "insert into login values (?,?,?,?);"
+
+conn.commit() # save database เหมือน writechange
